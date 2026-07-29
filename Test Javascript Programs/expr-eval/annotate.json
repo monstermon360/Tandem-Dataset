@@ -1,0 +1,11 @@
+{ "evaluate.js":
+    { "Pattern": "Error messages nested inside large stack of if/else statements",
+      "Static Analysis Risk": "Causes Path Explosion",
+      "Failure": "Analyzer may miss important paths",
+      "Difficulty": "Medium Difficulty"
+    },
+
+    "Evaluate()": "No issue with evaluate function itself as it behaves differently than eval()"
+
+
+}

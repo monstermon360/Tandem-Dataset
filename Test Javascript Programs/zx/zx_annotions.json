@@ -1,0 +1,9 @@
+{
+    "test/core.test.js":
+    {
+        "Pattern": "Use of commands in the style $'command'",
+        "Static Analysis Risk": "Shell-interpolated commands",
+        "Failure": "Command strings are built dynamically and execution happens through shell wrappers",
+        "Difficulty": "High Difficulty"
+    }
+}

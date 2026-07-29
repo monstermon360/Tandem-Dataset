@@ -1,0 +1,36 @@
+{
+    "--list-functions.js" :
+    {
+        "File": "application.js",
+        "Analysis": [
+            "/mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/Expressjs/application.js (22/25 analyzed) ===",
+            "✓ init offset 1194 1 contexts",
+            "✓ getrouter offset 1522 2 contexts",
+            "✓ defaultConfiguration offset 1865 1 contexts",
+            "✓ onmount offset 2369 2 contexts",
+            "✓ handle offset 3531 1 contexts",
+            "✓ use offset 4363 1 contexts",
+            "✗ <anon> offset 4947 0 contexts",
+            "✗ mounted_app offset 5219 0 contexts",
+            "✗ <anon> offset 5310 0 contexts",
+            "✓ route offset 5771 1 contexts",
+            "✓ engine offset 7086 1 contexts",
+            "✓ param offset 7636 1 contexts",
+            "✓ set offset 8153 1 contexts",
+            "✓ path offset 9175 1 contexts",
+            "✓ enabled offset 9513 1 contexts",
+            "✓ disabled offset 9820 1 contexts",
+            "✓ enable offset 9996 1 contexts",
+            "✓ disable offset 10177 1 contexts",
+            "✓ <anon> offset 10323 2 contexts",
+            "✓ <anon> offset 10359 2 contexts",
+            "✓ all offset 10840 1 contexts",
+            "✓ render offset 11409 1 contexts",
+            "✓ listen offset 13288 1 contexts",
+            "✓ logerror offset 13663 1 contexts",
+            "✓ tryRender offset 13844 1 contexts"
+        ],
+        "Findings": "Could not analyze the mount_app function as well as the two surrounding functions. These three functions are inside the middleware registration flow",
+        "Results" : "Tandem likely did not connect the registered middleware callbacks to their eventual runtime invocation, so those closures had no discovered call contexts. The zero-contexts are plausibly tied to middleware chain execution"
+    }
+}

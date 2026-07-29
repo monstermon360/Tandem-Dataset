@@ -1,0 +1,17 @@
+{
+    "--list-function":
+    {
+        "File": "openBrowser.js",
+        "Analysis": [
+            "/mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/create-react-app/openBrowser.js (5/6 analyzed) ===",
+            "✓ getBrowserEnv                    offset 498    2 contexts",
+            "✓ executeNodeScript                offset 1130   1 contexts",
+            "✓ <anon>                           offset 1342   2 contexts",
+            "✓ startBrowserProcess              offset 1669   1 contexts",
+            "✗ <anon>                           offset 3753   0 contexts",
+            "✓ openBrowser                      offset 4026   1 contexts"
+        ],
+        "Findings": "Failed to analyze one anonymous function, but this function didn't hold execSync() or executeNodeScript() methods",
+        "Results": "Tandem failed to analyze the function due to it being a callback/event-handler modeling limitiation. All functions with clear sink-containing functions or command injection issues were analyzed successfully"
+    }
+}

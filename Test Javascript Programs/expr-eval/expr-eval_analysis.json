@@ -1,0 +1,18 @@
+{
+    "--list-functions":
+    {
+        "File": "evaluate.js",
+        "Analysis": [
+            "/mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/expr-eval/evaluate.js (4/7 analyzed) ===",
+            "✓ evaluate offset 160 1 contexts",
+            "✗ <anon> offset 2746 0 contexts",
+            "✗ <anon> offset 2977 0 contexts",
+            "✓ createExpressionEvaluator offset 4173 1 contexts",
+            "✗ <anon> offset 4324 0 contexts",
+            "✓ isExpressionEvaluator offset 4406 2 contexts",
+            "✓ resolveExpression offset 4481 1 contexts"
+        ],
+        "Findings": "Several <anon> or unamed functions nested within if statements of other functions have 0 contexts",
+        "Results": "Due to Path Explosion these nested functions are unable to be analyzed by Tandem."
+    }
+}

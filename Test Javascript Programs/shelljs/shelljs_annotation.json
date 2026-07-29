@@ -1,0 +1,9 @@
+{
+    "exec.js":
+    { "Pattern": "Use of child_process and other exec functions to execute shellc commands",
+      "Static Analysis Risk": "Command Injection",
+      "Failure": "User-controlled string passed directly into shell execution causing command injection to occur, requires whole-program analysis to detect injection",
+      "Difficulty": "High Difficulty"
+
+    }
+}

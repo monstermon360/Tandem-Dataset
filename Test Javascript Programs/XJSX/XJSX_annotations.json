@@ -1,0 +1,8 @@
+{
+    "xjsx.js": {
+        "Pattern": "Use of eval() along side arguments list",
+        "Static Analysis Risk": "Dynamic Code Execution/Code Injection",
+        "Failure": "Code is generated at runtime, leading to anaylzers needing to guess all possibilities",
+        "Difficulty": "High Difficulty"
+    }
+}

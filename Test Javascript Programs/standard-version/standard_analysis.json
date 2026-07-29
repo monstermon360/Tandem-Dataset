@@ -1,0 +1,22 @@
+{
+    "--list-function":
+    {
+        "File": "index.js",
+        "Analysis": [
+            "/mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/standard-version/index.js (1/1 analyzed) ===",
+            "✓ standardVersion                  offset 446    1 contexts"
+        ],
+        "Findings": "Analyzed its singular function with one context",
+        "Results": "Tandem didn't fail to analyze this file even though it had command injection issues",
+
+        "File_2": "commit.js",
+        "Analysis_2": [
+            "/mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/standard-version/commit.js (2/3 analyzed) ===",
+            "✓ <anon>                           offset 307    1 contexts",
+            "✓ execCommit                       offset 598    1 contexts",
+            "✗ <anon>                           offset 1126   0 contexts"
+        ],
+        "Findings_2": "Couldn't analyze last function which is nested in execCommit",
+        "Results_2": "The zero contexted anonymous function is a nested callback / wrapper that Tandem did not create a separate context for. Tandem didn't fail due to command injection"
+    }
+}

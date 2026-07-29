@@ -1,0 +1,22 @@
+{
+    "lib/git.js": {
+        "Pattern": "Command string construction from user inputs passed into Git CLI wrapper functions",
+        "Static Analysis Risk": "Command Injection via dynamic command construction",
+        "Failure": "User-controlled parameters are concatenated into shell commands that are later executed via spawn/exec. Static analysis struggles to track sanitization across multiple wrapper functions and method calls, especially when arguments are conditionally appended.",
+        "Difficulty": "High Difficulty"
+    },
+
+    "lib/runners/promise-wrapped.js": {
+        "Pattern": "Asynchronous wrapping of command execution using Promises",
+        "Static Analysis Risk": "Asynchronous control flow tracking",
+        "Failure": "Execution flow is deferred through Promises, making it difficult for static analysis to connect input sources to eventual command execution sinks. This breaks straightforward control-flow reasoning and requires interprocedural async modeling.",
+        "Difficulty": "Very High Difficulty"
+    },
+
+    "lib/utils.js": {
+        "Pattern": "String concatenation and transformation of command arguments",
+        "Static Analysis Risk": "Indirect command construction",
+        "Failure": "Command arguments are constructed indirectly through helper functions, making it difficult for static analysis to trace tainted input propagation across utility layers.",
+        "Difficulty": "Medium to High Difficulty"
+    }
+}

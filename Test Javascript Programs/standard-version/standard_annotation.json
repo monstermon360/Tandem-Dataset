@@ -1,0 +1,17 @@
+{
+    "index.js":
+    {
+        "Pattern": "Use of const message = argv.m || argv.message before releaseCommitMessageFormat is called",
+        "Static Analysis Risk": "Command Injection",
+        "Failure": "User-controlled input gets truend into releaseCommitMessageFormat. This file is where the tainted value enteres the release workflow",
+        "Difficulty": "High Difficulty"
+    },
+
+    "commit.js":
+    {
+        "Pattern": "There exists data flow from formatCommitMessage() and the runExecFile('git') call",
+        "Static Analysis Risk": "Command Injection",
+        "Failure": "The data flow into formatCommitMessage() and the runExecFile('git') cause there to be a comand injection concern",
+        "Difficulty": "High Difficulty"
+    }
+}

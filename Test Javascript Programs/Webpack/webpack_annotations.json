@@ -1,0 +1,9 @@
+{
+    "lib/Compilation.js" :
+    {
+        "Pattern": "Object properties are changed not using . notation but instead in the form obj[key]",
+        "Static Analysis Risk": "Dynamic Property Access",
+        "Failure": "The static analyzer has to find all possible values for [key], leading to possible over-approximation or missed flows",
+        "Difficulty": "High Difficulty"
+    }
+}

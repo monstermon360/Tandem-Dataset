@@ -1,0 +1,14 @@
+{
+    "lib/index.js": {
+        "Pattern": "Multiple require() calls",
+        "Static Analysis Risk": "External Dependency Calls",
+        "Failure": "Analaysis tool may not know the external libraries function",
+        "Difficulty": "High Difficulty"
+    },
+    "lib/merge.js": {
+        "Pattern": "User-controlled object keys propagated into object assignment",
+        "Static Analysis Risk": "Dynamic property access",
+        "Failure": "Property names are derived at runtime from Object.keys(source), making precise static resolution of whether unsafe keys like __proto__ or constructor are included difficult. This breaks points-to and property-sensitive analysis.",
+        "Difficulty": "High Difficulty"
+    }
+}

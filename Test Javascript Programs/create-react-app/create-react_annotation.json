@@ -1,0 +1,9 @@
+{
+    "openBrowser.js":
+    {
+        "Pattern": "Use of child_process and execSync methods ",
+        "Static Analysis Risk": "Command Injection",
+        "Failure": "Tainted data can reach the sink through the use of exec calls in this file leading to command injection risks",
+        "Difficulty": "High Difficulty"
+    }
+}

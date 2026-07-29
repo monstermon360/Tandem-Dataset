@@ -1,0 +1,8 @@
+{
+  "lib/methods/main-async.js": {
+    "Pattern": "Runtime-generated command arguments passed into subprocess execution wrappers",
+    "Static Analysis Risk": "Command Injection",
+    "Failure": "User-controlled command data propagates through asynchronous wrapper layers before reaching execution sinks, making taint propagation and sink identification difficult.",
+    "Difficulty": "High Difficulty"
+  }
+}

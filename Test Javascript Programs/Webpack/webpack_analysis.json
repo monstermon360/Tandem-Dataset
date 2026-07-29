@@ -1,0 +1,19 @@
+{
+    "--list-functions":
+    {
+        "File": "Compilation.js",
+        "Error": [
+            "thread 'main' (25875) panicked at src/global_aggregator.rs:3338:18:",
+            "AST KIND NOT HANDLED NewExpression(NewExpression {",
+            "  span: Span { start: 147051, end: 147172 },",
+            "  callee: Identifier(IdentifierReference {",
+            "    span: Span { start: 147055, end: 147058 },",
+            "    name: \"Set\"",
+            "  })",
+            "})",
+            "note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace"
+        ],
+        "Findings": "Tandem failed to analyze the compilation.js file, due to a tool limiation that being unsupported AST node",
+        "Result": "Tandem didn't fail because of dynamic property access, so there isn't proof that Tandem was unable to analyze this file because of Dynamic property access / runtime-dependent indexing"
+    }
+}

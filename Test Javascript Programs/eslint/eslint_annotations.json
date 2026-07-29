@@ -1,0 +1,8 @@
+{
+  "lib/shared/relative-module-resolver.js": {
+    "Pattern": "Runtime-generated module resolution paths passed into require.resolve",
+    "Static Analysis Risk": "Dynamic module resolution",
+    "Failure": "Imported modules depend on runtime filesystem state and configuration data, preventing static analyzers from constructing a precise dependency graph.",
+    "Difficulty": "Very High Difficulty"
+  }
+}

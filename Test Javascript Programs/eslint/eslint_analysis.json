@@ -1,0 +1,12 @@
+{
+    "--list-functions" :
+    {
+        "File": "relative-module-resolver.js",
+        "Analysis": [
+            "/mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/eslint/relative-module-resolver.js (1/1 analyzed) ===",
+            "✓ resolve offset 892 1 contexts"
+        ],
+        "Findings": "Successfully analyzed one function in spite of dynamic module resolution being present",
+        "Result": "Tandem didn't run into errors when analyzing this file which means it can handle Dynamic module resolution"
+    }
+}

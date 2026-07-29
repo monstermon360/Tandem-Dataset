@@ -1,0 +1,22 @@
+{
+  "lodash.js": {
+    "Pattern": "Large number of utility functions with runtime type checks (isArray, isObject, etc.)",
+    "Static Analysis Risk": "Path Explosion due to dynamic type branching",
+    "Failure": "Analyzer may not precisely determine which branch executes for a given input",
+    "Difficulty": "High Difficulty"
+  },
+
+  "createWrap()": {
+    "Pattern": "Higher-order function returning dynamically composed functions",
+    "Static Analysis Risk": "Call Graph Ambiguity",
+    "Failure": "Analyzer cannot resolve which function is ultimately invoked",
+    "Difficulty": "High Difficulty"
+  },
+
+  "template()": {
+    "Pattern": "Dynamic code generation using strings",
+    "Static Analysis Risk": "Code Injection / Unanalyzable Code",
+    "Failure": "Analyzer cannot inspect generated code paths",
+    "Difficulty": "Very High Difficulty"
+  }
+}

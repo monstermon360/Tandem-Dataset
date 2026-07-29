@@ -1,0 +1,17 @@
+{
+    "--list-functions" :
+    {
+        "File": "auth.js",
+        "Analysis": [
+            "/mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/jwt-express-react-example/auth.js (6/6 analyzed) ===",
+            "✓ <anon>                           offset 317    1 contexts",
+            "✓ <anon>                           offset 679    1 contexts",
+            "✓ <anon>                           offset 1813   1 contexts",
+            "✓ <anon>                           offset 2067   1 contexts",
+            "✓ <anon>                           offset 2355   4 contexts",
+            "✓ <anon>                           offset 2431   1 contexts"
+        ],
+        "Findings": "Authentication logic is delegated to Passport middleware, but the route structure remains static and easy to recover.",
+        "Result": "Tandem was able to successfully analyze all the functions even with authenication control issues"
+    }
+}

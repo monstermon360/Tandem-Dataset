@@ -1,0 +1,9 @@
+{
+    "server/middleware/jwt.middleware.js":
+    {
+        "Pattern": "Each guard is a higher-order function: hasRole, hasAllRoles, and hasAnyRole return middleware functions that Express will execute later",
+        "Static Analysis Risk": "Authenication Control",
+        "Failure": "Tandem has to model that returned closure correctly and then follow the Authorization header through bearer.split(' ')[1] into JwtService.decode() / JwtService.verify(), leading to a potential interprocedural flow issue",
+        "Difficulty": "High Difficulty"
+  }
+}

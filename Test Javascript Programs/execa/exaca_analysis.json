@@ -1,0 +1,18 @@
+{
+    "--list-function" :
+    {
+        "File": "main-async.js",
+        "Analysis": [
+            "/mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/execa/main-async.js (7/7 analyzed) ===",
+            "✓ <anon>                           offset 1294   1 contexts",
+            "✓ <anon>                           offset 2042   2 contexts",
+            "✓ <anon>                           offset 2723   2 contexts",
+            "✓ <anon>                           offset 2964   2 contexts",
+            "✓ <anon>                           offset 4335   2 contexts",
+            "✓ <anon>                           offset 4823   3 contexts",
+            "✓ <anon>                           offset 5196   2 contexts"
+            ],
+        "Findings": "All functions were successfully analyzed even with this files runtime-generated command arguments passed into subprocess execution wrappers",
+        "Results": "Even with main-async's command injection issues Tandem was able to successfully analyze all of its functions"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "backend/routes/auth.js":
+    {
+        "Pattern": "The real access control is hidden behind passport.authenticate('jwt', { session: false }) on the /me and /me/update-password routes.",
+        "Static Analysis Risk": "Authenication Control",
+        "Failure": "Tandem has to realize that those route handlers only run after Passport has authenticated the request, and it has to track that req.user.username comes from Passport's JWT strategy, not from local code in the route body.",
+        "Difficulty": "High Difficulty"
+    }
+}

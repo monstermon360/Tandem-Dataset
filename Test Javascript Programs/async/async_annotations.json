@@ -1,0 +1,15 @@
+{
+  "lib/internal/groupBy.js": {
+    "Pattern": "Makes return call to groupByLimit() -> mapLimit() -> map() -> eachOFLimit() -> etc. ",
+    "Static Analysis Risk": "Dynamically Invoked Callbacks",
+    "Failure": "The real callee is hidden behind wrappers and callbacks are propagated indirectly",
+    "Difficulty": "High Difficulty"
+  },
+
+  "lib/internal/mapLimit.js": {
+    "Pattern": "Gets called by groupByLimit() and returns map()",
+    "Static Analysis Risk": "Dynamically Invoked Callbacks",
+    "Failure": "Original return call starts somewhere else and its wrapped multiple time, exists inside a long chain of return functions",
+    "Difficulty": "High Difficulty"
+  }
+}

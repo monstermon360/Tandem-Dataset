@@ -1,0 +1,22 @@
+{
+  "src/createStore.ts": {
+    "Pattern": "Dispatch function triggers reducers indirectly",
+    "Static Analysis Risk": "Indirect Control Flow",
+    "Failure": "Analyzer cannot easily link dispatch calls to specific reducer executions",
+    "Difficulty": "High Difficulty"
+  },
+
+  "src/combineReducers.ts": {
+    "Pattern": "Dynamic composition of multiple reducer functions",
+    "Static Analysis Risk": "Interprocedural Flow Complexity",
+    "Failure": "Analyzer struggles to track state updates across multiple reducers",
+    "Difficulty": "High Difficulty"
+  },
+
+  "src/applyMiddleware.ts": {
+    "Pattern": "Function composition to wrap dispatch with middleware chain",
+    "Static Analysis Risk": "Call Graph Explosion",
+    "Failure": "Analyzer cannot determine final execution order of middleware",
+    "Difficulty": "Very High Difficulty"
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "lib/filesystem.js":
+    {
+        "Pattern": "Makes use of exec(), execSync(), spawn(), etc.",
+        "Static Analysis Risk": "Command Injection",
+        "Failure": "The advisories for this project involve command construction from user-controllable values reaching OS execution routines.",
+        "Difficulty": "High Difficulty"
+    },
+
+    "lib/util.js":
+    {
+        "Pattern": "Makes use of exec(), execSync(), spawn(), etc.",
+        "Static Analysis Risk": "Command Injection",
+        "Failure": "The advisories for this project involve command construction from user-controllable values reaching OS execution routines.",
+        "Difficulty": "High Difficulty"
+    }
+}

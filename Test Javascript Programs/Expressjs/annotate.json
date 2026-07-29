@@ -1,0 +1,22 @@
+{
+  "lib/application.js": {
+    "Pattern": "Dynamic registration of middleware via app.use",
+    "Static Analysis Risk": "Dynamic Call Graph Construction",
+    "Failure": "Analyzer cannot determine execution order of middleware",
+    "Difficulty": "High Difficulty"
+  },
+
+  "lib/request.js": {
+    "Pattern": "Dynamic property assignment on request object",
+    "Static Analysis Risk": "Alias + Object Shape Uncertainty",
+    "Failure": "Analyzer cannot determine full structure of req object",
+    "Difficulty": "Medium Difficulty"
+  },
+
+  "lib/response.js": {
+    "Pattern": "Shared mutable response object modified across middleware",
+    "Static Analysis Risk": "Alias Analysis Complexity",
+    "Failure": "Analyzer may miss side effects between middleware layers",
+    "Difficulty": "Medium Difficulty"
+  }
+}

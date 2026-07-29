@@ -1,0 +1,12 @@
+{
+    "--list-functions":
+    {
+        "File": "merge.js",
+        "Analysis": [
+            "/mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/hoek/merge.js (1/1 analyzed) ===",
+            "✓ <anon> offset 180 1 contexts"
+        ],
+        "Findings": "The file is successfully analyzed in one contex",
+        "Result": "Tandem showed no sign of analysis failurs and appears stable on this file, even though the code still depends on runtime types and values. "
+    }
+}

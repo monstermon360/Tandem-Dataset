@@ -1,0 +1,17 @@
+{
+   "--list-functions":
+   {
+        "File": "groupByLimit.js",
+        "Analysis": [
+            "=== /mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/async/groupByLimit.js (4/4 analyzed) ===",
+            "✓ groupByLimit offset 1068 1 contexts",
+            "✓ <anon> offset 1199 2 contexts",
+            "✓ <anon> offset 1241 1 contexts",
+            "✓ <anon> offset 1361 2 contexts",
+            "=== /mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/async/mapLimit.js (1/1 analyzed) ===",
+            "✓ mapLimit offset 1031 1 contexts"
+            ],
+        "Findings": "Successfully analyzed all the functions in groupByLimit.js as well as mapLimit.js which was another file in the same folder as groupByLimit.js",
+        "Result": "Tandem was able to analyze this file despite its dynamically invoked callback issues"
+   }
+}

@@ -1,0 +1,24 @@
+{
+    "--list-functions":
+    {
+        "File": "jwt.middleware.js",
+        "Analysis": [
+                "/mnt/c/Users/monst/OneDrive/Documents/Program Analysis/Test Javascript Programs/node-express-jwt-example/jwt.middleware.js (13/13 analyzed) ===",
+                "✓ JwtMiddleware.constructor        offset 84     2 contexts",
+                "✓ JwtMiddleware.verify             offset 99     1 contexts",
+                "✓ JwtMiddleware.hasRole            offset 347    1 contexts",
+                "✓ <anon>                           offset 367    1 contexts",
+                "✓ <anon>                           offset 586    2 contexts",
+                "✓ JwtMiddleware.hasAllRoles        offset 717    1 contexts",
+                "✓ <anon>                           offset 738    1 contexts",
+                "✓ <anon>                           offset 945    1 contexts",
+                "✓ <anon>                           offset 977    1 contexts",
+                "✓ JwtMiddleware.hasAnyRole         offset 1109   1 contexts",
+                "✓ <anon>                           offset 1130   1 contexts",
+                "✓ <anon>                           offset 1336   1 contexts",
+                "✓ <anon>                           offset 1368   1 contexts"
+            ],
+        "Findings": "Successfuly analyzed the JwtMiddleware class even with its Authenication Control issues",
+        "Result": "Tandem was able to analyze the file successfully even though it had Authenication Control issues"
+    }
+}
